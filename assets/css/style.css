@@ -30,6 +30,12 @@ section {
     object-fit: cover;
 }
 
+.icon-box {
+    background-color: #00d4ff;
+    color: white;
+    padding: 10px 0;
+}
+
 .card {
     border: none;
 }
