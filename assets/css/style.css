@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.bg-info-custom {
+    background-color: #00d4ff;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.card {
+    border: none;
+}
+
+footer {
+    background-color: #00d4ff;
+}
