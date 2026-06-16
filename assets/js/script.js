@@ -1,4 +1,4 @@
-// Tooltips Bootstrap y alerta del formulario
+// Tooltips Bootstrap
 document.addEventListener("DOMContentLoaded", function () {
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 
@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Alerta del formulario
   const btnEnviar = document.getElementById("btnEnviar");
 
   if (btnEnviar) {
@@ -15,4 +16,18 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Tu mensaje fue enviado correctamente.");
     });
   }
+
+  // Efecto hover en las tarjetas destacadas
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(function(card) {
+    card.addEventListener("mouseenter", function() {
+      card.querySelector(".card-body").style.backgroundColor = "#0096c7";
+    });
+
+    card.addEventListener("mouseleave", function() {
+      card.querySelector(".card-body").style.backgroundColor = "#00d4ff";
+    });
+  });
+
 });
